@@ -1,0 +1,18 @@
+version: '3.7'
+
+volumes:
+    logs:
+        driver: local
+
+services:
+    slim:
+        image: php:8.1-alpine
+        working_dir: /var/www
+        command: php -S 0.0.0.0:8081 -t public
+        environment:
+            docker: "true"
+        ports:
+            - "8081:8081"
+        volumes:
+            - .:/var/www
+            - logs:/var/www/logs
