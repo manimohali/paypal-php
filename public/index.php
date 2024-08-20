@@ -10,14 +10,11 @@ $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 
-//US (Sandbox Details)
-//client - AXIAU0bbukqWHCVwzHjmM0fe_YRPqg3C6MUSvLS85zG4QImSAG_B4okX-l54H8hErIH9GV9TuLVqoX4u
-//Secret - EBa6TIoif8jPJCwTahjCPGk5AaRGr0BWBq41qAnLFjW4ImgJPSriQ-WV0HGKV1vOcx2Q5G0IIZacsfyR
 
 
 
-$PAYPAL_CLIENT_ID = 'AXIAU0bbukqWHCVwzHjmM0fe_YRPqg3C6MUSvLS85zG4QImSAG_B4okX-l54H8hErIH9GV9TuLVqoX4u';
-$PAYPAL_CLIENT_SECRET = 'EBa6TIoif8jPJCwTahjCPGk5AaRGr0BWBq41qAnLFjW4ImgJPSriQ-WV0HGKV1vOcx2Q5G0IIZacsfyR';
+$PAYPAL_CLIENT_ID = 'your PAYPAL_CLIENT_ID';
+$PAYPAL_CLIENT_SECRET = 'your PAYPAL_CLIENT_SECRET';
 
 // $PORT = 8888;
 $base = "https://api-m.sandbox.paypal.com";
